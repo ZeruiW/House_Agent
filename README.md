@@ -2,28 +2,6 @@
 
 An AI-powered house design assistant built with LangGraph and Gradio. This intelligent agent helps you create floorplans, analyze budgets, and get design advice using Montreal construction standards.
 
-## 🌟 Features
-
-### 🏠 **Floorplan Management**
-- Add, remove, and modify rooms with specific dimensions
-- Real-time area calculations and cost updates
-- Professional floorplan summaries with room details
-
-### 💰 **Budget Analysis** 
-- Montreal construction costs ($350/sq ft)
-- Real-time budget vs. cost comparison
-- Automatic constraint solving when over budget
-
-### 🤖 **AI-Powered Assistance**
-- Natural language room modifications
-- Design advice and building code information
-- Intelligent routing to specialized agents
-
-### 🎨 **Web Interface**
-- Clean, intuitive Gradio UI
-- Real-time floorplan and cost displays  
-- Interactive budget slider
-- Chat-based interaction
 
 ## 🚀 Quick Start
 
@@ -94,53 +72,3 @@ User Input → Project Manager Router → Specialized Agents → Response
 - `calculate_construction_cost()`: Montreal pricing calculations
 - `summarize_floorplan()`: Professional floorplan formatting
 
-## 🎯 Key Benefits
-
-### **🔄 Automatic Feedback Loops**
-Every floorplan change triggers automatic budget recalculation, ensuring you always know the cost impact.
-
-### **💡 Intelligent Constraint Solving**
-When designs exceed budget, the system provides specific, actionable suggestions with exact cost savings.
-
-### **🎨 User-Driven Design**
-No default layouts - the system only creates what you specifically request, ensuring diverse and personalized results.
-
-### **📊 Professional Output**
-Beautiful floorplan summaries formatted like architectural drafts with detailed cost breakdowns.
-
-## 🛠️ Files Structure
-
-```
-House_Agent/
-├── main.py           # Core LangGraph workflow and CLI
-├── tools.py          # Floorplan and budget calculation tools
-├── app.py            # Gradio web interface
-├── launch_ui.py      # UI launcher with dependency checks
-├── requirements.txt  # Python dependencies
-├── .env              # Environment variables (create this)
-└── README.md         # This file
-```
-
-## 🌍 Montreal Construction Standards
-
-The system uses Montreal-specific construction costs and building practices:
-- **Base cost**: $350 per square foot
-- **Includes**: Montreal building codes and climate considerations
-- **Currency**: Canadian dollars (CAD)
-
-## 🤝 Contributing
-
-This is a demo project showcasing LangGraph multi-agent workflows. Feel free to extend it with:
-- Additional room types and layouts
-- Different regional pricing models
-- More sophisticated constraint solving
-- Integration with CAD tools
-- 3D visualization features
-
-## 📄 License
-
-Open source - feel free to use and modify as needed.
-
----
-
-**Built with ❤️ using LangGraph, LangChain, and Gradio**
